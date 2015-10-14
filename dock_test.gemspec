@@ -22,8 +22,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'json-schema'
   spec.add_dependency 'nokogiri'
   spec.add_dependency 'simple_oauth'
+  spec.add_dependency 'rake'
   spec.add_development_dependency 'bundler'
-  spec.add_development_dependency 'rake'
   spec.add_development_dependency 'minitest'
   spec.add_development_dependency 'pry'
 
