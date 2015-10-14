@@ -33,3 +33,8 @@ AllCops:
     - 'Guardfile'
     - 'metadata.rb'
     - '.kitchen/**'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - !ruby/regexp /old_and_unused\.rb$/
+
