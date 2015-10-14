@@ -14,5 +14,8 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
-desc 'Run tests on Travis'
-task travis: %w(style spec) # TODO: Figure out how to run integration tests in CI.
+task default: :test
+
+#desc 'Run tests on Travis'
+#task travis: %w(style spec) # TODO: Figure out how to run integration tests in CI.
+#heroku.rake
