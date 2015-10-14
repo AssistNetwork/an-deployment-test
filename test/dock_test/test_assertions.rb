@@ -1,4 +1,4 @@
-require 'test_helper'
+require_relative '../test_helper'
 
 class TestAssertions < Minitest::Test
 
@@ -22,7 +22,7 @@ class TestAssertions < Minitest::Test
   def test_assert_response_body_method
     skip unless ENV['DOCK_ENV'] == 'development'
     get '/path?foo=bar', {a: :b}, {'CONTENT_TYPE' => 'application/json'}
-    assert_response_body '{"verb":"GET","uri":"http://localhost:9871/path?foo=bar&a=b","body":"","protcol":"HTTP/1.1","headers":{"ACCEPT":"*/*","USER_AGENT":"Ruby","CONTENT_TYPE":"application/json","HOST":"localhost:9871","VERSION":"HTTP/1.1"}}'
+    assert_response_body '{"verb":"GET","uri":"http://localhost:9871/path?foo=bar&a=b","body":"","protocol":"HTTP/1.1","headers":{"ACCEPT":"*/*","USER_AGENT":"Ruby","CONTENT_TYPE":"application/json","HOST":"localhost:9871","VERSION":"HTTP/1.1"}}'
   end
 
   def test_assert_response_json_schema_method

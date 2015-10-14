@@ -4,10 +4,10 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'dock_test/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "dock_test"
+  spec.name          = 'dock_test'
   spec.version       = DockTest::VERSION
-  spec.authors       = ["Jack Xu"]
-  spec.email         = ["jackxxu@gmail.com"]
+  spec.authors       = ['Jack Xu']
+  spec.email         = ['jackxxu@gmail.com']
   spec.summary       = spec.description = %q{an outside-in service api test framework.}
   spec.homepage      = "https://github.com/jackxxu/dock_test"
   spec.license       = "MIT"
@@ -22,6 +22,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'json-schema'
   spec.add_dependency 'nokogiri'
   spec.add_dependency 'simple_oauth'
-  spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'minitest'
+  spec.add_development_dependency 'pry'
+
 end
