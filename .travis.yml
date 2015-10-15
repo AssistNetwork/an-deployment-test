@@ -10,7 +10,7 @@ gemfile:
 script: bundle exec rake
 deploy:
   provider: heroku
-    app:
+  app:
     master: an-deployment-test
     production: an-deployment-test
   on:
