@@ -2,11 +2,16 @@ PATH
   remote: .
   specs:
     dock_test (0.4.5)
+      bundler
       json-schema
+      minitest
       multi_json
       nokogiri
+      ohm
+      pry
       rack
       rake
+      rubocop
       simple_oauth
 
 GEM
@@ -61,12 +66,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
   dock_test!
-  minitest
-  ohm
-  pry
-  rubocop
 
 BUNDLED WITH
    1.10.6
